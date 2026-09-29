@@ -1,4 +1,4 @@
-# 🔐 CryptoVault: Aplikasi Kriptografi Modern (AES-256-GCM)
+# CryptoVault: Aplikasi Kriptografi Modern (AES-256-GCM)
 
 Aplikasi berbasis web untuk enkripsi dan dekripsi berkas serta teks menggunakan algoritma modern **AES-256-GCM** (*Authenticated Encryption with Associated Data / AEAD*) dengan antarmuka interaktif **Streamlit**, analisis kuantitatif (*Avalanche Effect*, Entropi Shannon, *Benchmark*), dan visualisasi perbandingan keamanan mode *cipher* (ECB vs. GCM).
 
@@ -8,7 +8,7 @@ Tugas Proyek Mata Kuliah **Keamanan Informasi (Section 7)**
 
 ---
 
-## 👥 Identitas Anggota Kelompok
+## Identitas Anggota Kelompok
 
 | No | Nama Mahasiswa | NPM | Peran / Kontribusi |
 |---|---|---|---|
@@ -16,7 +16,7 @@ Tugas Proyek Mata Kuliah **Keamanan Informasi (Section 7)**
 
 ---
 
-## 📌 Topik dan Spesifikasi (Topik A: Enkripsi Algoritma Modern)
+## Topik dan Spesifikasi (Topik A: Enkripsi Algoritma Modern)
 
 Proyek ini memilih **Topik A: Aplikasi Enkripsi (Algoritma Modern)** dengan rincian arsitektur teknis:
 1. **Algoritma Utama:** **AES-256-GCM** (NIST SP 800-38D) menggunakan pustaka teruji `cryptography` Python.
@@ -30,7 +30,7 @@ Proyek ini memilih **Topik A: Aplikasi Enkripsi (Algoritma Modern)** dengan rinc
 
 ---
 
-## 📁 Struktur Repositori
+## Struktur Repositori
 
 ```text
 proyek-kripto/
@@ -50,7 +50,7 @@ proyek-kripto/
 
 ---
 
-## 🚀 Panduan Instalasi dan Menjalankan Aplikasi
+## Panduan Instalasi dan Menjalankan Aplikasi
 
 ### 1. Prasyarat Sistem
 - Python 3.10 atau versi lebih baru
@@ -59,7 +59,7 @@ proyek-kripto/
 
 ### 2. Kloning Repositori
 ```bash
-git clone https://github.com/[username-kelompok]/[nama-repo].git
+git clone https://github.com/zethboy/crypto-aes256-app.git
 cd proyek-kripto
 ```
 
@@ -88,7 +88,7 @@ Aplikasi dapat diakses melalui peramban web pada alamat `http://localhost:8501`.
 
 ---
 
-## 🧪 Pengujian Otomatis (*Unit Testing*)
+## Pengujian Otomatis (*Unit Testing*)
 
 Jalankan perintah berikut untuk mengeksekusi 6 skenario *unit test*:
 ```bash
@@ -110,7 +110,7 @@ python generate_test_data.py
 
 ---
 
-## 🎯 Panduan Skenario Demo UTS (Alokasi Waktu: 7 Menit)
+## Panduan Skenario Demo UTS (Alokasi Waktu: 7 Menit)
 
 Aplikasi telah dilengkapi tab khusus **"🎯 Skenario Demo UTS"** yang dirancang presisi sesuai ketentuan penilaian:
 1. **Langkah 1 (Enkripsi PDF):** Unggah dokumen PDF contoh, masukkan kata sandi, lalu klik enkripsi. Sistem menampilkan cuplikan heksadesimal cipherteks dan ukuran *payload*.
@@ -121,7 +121,7 @@ Aplikasi telah dilengkapi tab khusus **"🎯 Skenario Demo UTS"** yang dirancang
 
 ---
 
-## 📊 Ringkasan Hasil Pengujian Kuantitatif
+## Ringkasan Hasil Pengujian Kuantitatif
 
 ### 1. Uji 10 Masukan Berbeda (Integritas SHA-256)
 Seluruh 10 skenario masukan (teks pendek, teks panjang, Unicode/Emoji, berkas PDF, citra PNG, citra BMP, berkas JSON, tabel CSV, berkas biner acak 64 KB, dan payload kosong) teruji menghasilkan nilai dekripsi yang **100% identik** dengan *hash* SHA-256 yang cocok sempurna.
@@ -142,7 +142,7 @@ Pengujian waktu enkripsi dan dekripsi pada ukuran berkas standar:
 
 ---
 
-## 📚 Kaitan dengan Riset Dosen Pengampu
+## Kaitan dengan Riset Dosen Pengampu
 Implementasi dan analisis tugas proyek ini merujuk pada literatur dan riset dosen pengampu terkait keamanan web service, autentikasi berbasis token/kunci, serta integritas data:
 - **Rahmatulloh, A., & MSN, F.** (2020). *Implementasi Web Service untuk Sistem Informasi Pembagian Logistik Menggunakan REST API dengan Autentikasi JWT dan Enkripsi RC4*. Jurnal RESTI (Rekayasa Sistem Dan Teknologi Informasi), 4(3), 570-577.  
   *(Pada tugas ini, cipher usang seperti RC4 ditinggalkan dan diperbarui menggunakan standar modern AES-256-GCM AEAD).*
@@ -150,7 +150,7 @@ Implementasi dan analisis tugas proyek ini merujuk pada literatur dan riset dose
 
 ---
 
-## ⚖️ Integritas Akademik & Penggunaan AI
+## Integritas Akademik & Penggunaan AI
 Sesuai dengan Bagian 10 Petunjuk Tugas Proyek:
 - Bantuan AI (*Google Antigravity / Gemini*) digunakan sebagai sarana konsultasi perancangan antarmuka, pembuatan kerangka skrip pengujian, dan penelaahan pemenuhan regulasi proyek.
 - Seluruh logika kriptografi, struktur payload AEAD, dan analisis metrik telah dipahami, divalidasi, dan mampu dijelaskan secara mandiri oleh setiap anggota kelompok saat sesi tanya jawab demo UTS.
